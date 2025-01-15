@@ -71,7 +71,7 @@ const App = () => {
     <div className="app">
       <Navbar setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory} />
       <TopPlayers players={updatedData.slice(0,3)} />
-      <Stats stats={stats} />
+      <Stats stats={updatedData} />
       <PlayerList players={updatedData} />
     </div>
   );
